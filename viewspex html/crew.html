@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Crew - Learning Platform</title>
+    <link rel="stylesheet" href="css file/interface.css">
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+                  function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
+    <style>
+      body{
+        background: linear-gradient(#e6cdfa,#debff5,#dbb6f8,#d09cf8 100%);
+      }
+        .b1 {
+            font-family: 'Arial', 'sans-serif';
+            color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px 5px #911ab9;
+            width: 180%;
+            height: 100%;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .crew-member {
+            display: flex;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: violet;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: violet;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+  <header>
+		<div class="dropdown">
+            <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+            <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="newsfeed.htmt">Newsfeed</a>
+            <a href="crew clash.html">Crew</a>
+            <a href="course.html">Courses</a>
+            <a href="upload project.html">Project</a>
+            <a href="creator.html">GEN3</a>
+            <a href="webinar.html">Webiner</a>
+            <a href="#home">Settings</a>
+            <a href="login and signup.html">Logout</a>
+
+            </div>
+          </div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="course.html">Courses</a></li>
+				<li><a href="progress.html">Progress</a></li>
+                <li><a href="crew clash.html">Crew Clash</a></li>
+				<li><a href="game.html">Learning Cities</a></li>
+				<li><a href="creator.html">Gen3</a></li>
+				<li><a href="insidecities.html">RedAi</a></li>
+				<li><div class="dropdown">
+					<a onclick="myFunction()" class="dropbtn">Settings</a>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#home">Account Setting</a>
+					  <a href="#about">Progress Tracking</a>
+					  <a href="#contact">Feedback and Support</a>
+					  <a href="#contact">Notification Preferences</a>
+					  <a href="#contact">Upgrade to Hardship</a>
+
+					</div>
+				  </div></li>
+				<li><a href="newsfeed.html">Newsfeed</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+    <!--body-->
+    <div class="b1">
+        <div class="container">
+            <h1>My Crew</h1>
+            <p>Welcome to your crew page! Here are your crew members:</p>
+            <h1>Begin Battle with other Crew</h1>
+            <p><button><a href="war.html">Start</a></button></p>
+    
+            <ul>
+                <li>
+                    <div class="crew-member">
+                        <div class="avatar">
+                            <img src="https://placekitten.com/50/50" alt="Crew Member 1">
+                        </div>
+                        Crew Member 1
+                    </div>
+                    <button type="button" onclick="removeMember(1)">Remove</button>
+                </li>
+                <li>
+                    <div class="crew-member">
+                        <div class="avatar">
+                            <img src="https://placekitten.com/50/51" alt="Crew Member 2">
+                        </div>
+                        Crew Member 2
+                    </div>
+                    <button type="button" onclick="removeMember(2)">Remove</button>
+                </li>
+                <!-- Add more crew members as needed -->
+            </ul>
+    
+            <button type="button" onclick="inviteMember()">Invite New Member</button>
+        </div>
+    </div>
+        <script>
+            function removeMember(memberId) {
+                // Add your logic to remove a crew member
+                alert("Removed Crew Member " + memberId);
+            }
+    
+            function inviteMember() {
+                // Add your logic to invite a new crew member
+                alert("Inviting a new crew member!");
+            }
+        </script>
+
+		<!-- Footer Start -->
+    <div>
+      <footer>
+        <div class="content11">
+        <div class="top">
+          <div class="logo-details">
+          
+          <span class="logo_name" style="color:black;">ViewSpex</span>
+          </div>
+          <div class="media-icons" >
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="home.html">About us</a></li>
+          <li><a href="login and signup.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Course Available</li>
+          <li><a href="course.html">Python</a></li>
+          <li><a href="course.html">Css</a></li>
+          <li><a href="course.html">Javascript</a></li>
+          <li><a href="course.html">HTML</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login and signup.html">My account</a></li>
+          <li><a href="progress.html">Preferences</a></li>
+          <li><a href="subscribe.html">Purchase</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Available On</li>
+          <li><a href="#">Play Store</a></li>
+          <li><a href="#">Apple Store</a></li>
+          </ul>
+          <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+        </div>
+        <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text" style="font-weight: bolder;">
+          Copyright &#169; 2023
+          <a href="#"style="font-weight: bolder;">ViewSpex</a>
+          Created By All Rights Reserved!
+          </span>
+          <span class="policy_terms" >
+          <a href="#" style="font-weight: bolder;">Privacy policy</a>
+          <a href="#" style="font-weight: bolder;">Terms & condition</a>
+          </span>
+        </div>
+        </div>
+      </footer>
+      </div>
+    
+    <!-- Footer End -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="css file/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+	box-sizing: border-box;
+}
+body{
+	align-items: center;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	background: #f6f5f7;
+	font-family: 'monserrat', sans-serif;
+	min-height: 100%;
+	margin: 10%;
+}
+.container{
+	position: relative;
+	width: 1400px;
+	max-width: 100%;
+	min-height: 680px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22)
+}
+.sign-up, .sign-in{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+.sign-up{
+	width: 50%;
+	opacity: 0;
+	z-index: 1
+}
+.sign-in{
+	width: 50%;
+	z-index: 2;
+}
+form{
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+	margin: 0;
+}
+p{
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 15px 0 20px;
+}
+input{
+	background: #eee;
+	padding: 12px 15px;
+	margin: 8px 15px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+}
+a{
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+button{
+	color: #fff;
+	background: linear-gradient( #9f5ad8,#542577,#320b50,#0f011a 100%);
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 55px;
+	margin: 20px;
+	border-radius: 20px;
+	border:none;
+	outline: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+}
+button:active{
+	transform: scale(0.90);
+}
+#signIn, #signUp{
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+.container.right-panel-active .sign-in{
+	transform: translateX(100%);
+}
+.container.right-panel-active .sign-up{
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+@keyframes show{
+	0%, 49.99%{
+		opacity: 0;
+		z-index: 1;
+	}
+	50%, 100%{
+		opacity: 1;
+		z-index: 5;
+	}
+}
+.overlay-container{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+.container.right-panel-active .overlay-container{
+	transform: translateX(-100%);
+}
+.overlay{
+	position: relative;
+	color: #fff;
+	background: rgb(4, 74, 121);
+	left: -100%;
+	height: 100%;
+	width: 200%;
+	background: linear-gradient( #b094c5,#704b8b,#4e2270,#1c0330 100%);
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+.container.right-panel-active .overlay{
+	transform: translateX(50%);
+}
+.overlay-left, .overlay-right{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+.overlay-left{
+	transform: translateX(-20%);
+}
+.overlay-right{
+	right: 0;
+	transform: translateX(0);
+}
+.container.right-panel-active .overlay-left{
+	transform: translateX(0);
+}
+.container.right-panel-active .overlay-right{
+	transform: translateX(20%);
+}
+.social-container{
+	margin: 20px 0;
+}
+.social-container a{
+	height: 40px;
+	width: 40px;
+	margin: 0 5px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+a{
+        text-decoration: none;
+        color: white;
+      }
+#logo #span1{
+    font-size: 30px;
+	color:violet;
+}
+#logo #span2{
+    font-size: 30px;
+	color:blueviolet;
+}
+#logo #span3{
+    font-size: 30px;
+	color: violet;
+}
+#logo #span4{
+    font-size: 30px;
+	color: blueviolet;
+}
+</style>
+<body>
+	<h1 id="logo"><span id="span1">V</span><span id="span2">iew</span><span id="span3">Spex</span><span id="span4">.in</span></h1>
+	<br>
+	<div class="container" id="main">
+		<!---<h1 id="logo"><span id="span1">E</span><span id="span2">pic</span><span id="span3">Kart</span><span id="span4"> &nbsp;Prime</span></h1><br>--->
+		<div class="sign-up">
+			<form action="#">
+				<h1 style="color: rgb(49, 6, 49)">ViewSpex Subscription</h1>
+				<p>You selected Yearly plan</p>
+				<h2 style="font-family:cursive;font-weight: 500;;">Features</h2>
+				<br>
+				<ul>
+					<li style="text-align: left;">User can able to download all the Books</li>
+					<br>
+					<li style="text-align: left;">Get all the Upgraded gen3 AI benifits</li>
+					<br>
+					<li style="text-align: left;">Access to online Lab services for one year</li>
+					<br>
+					<li style="text-align: left;">You can cancel the plan anytime</li>
+					<br>
+					<li style="text-align: left;">All Monthly plan benifits included for Yearly plan</li>
+				</ul>
+				<br>
+				<a href="#" style="font-size: 18px;color: #e9a424;">start 30 days free trail</a>
+				<h4><span style="color: #164782;" id="inr1">INR.</span><span id="inr2" style="color: black;">7,199 </span><span id="m" style="font-weight: 100;"> / Year</span></h4>
+				<button><a href="checkoutpage.html"> Subscribe</a></button>
+			</form>
+		</div>
+		<div class="sign-in">
+			<form action="#">
+				<h1 style="color: rgb(49, 6, 49)">ViewSpex Subscription</h1>
+				
+				<p>You selected Monthly plan</p>
+				<h2 style="font-family:cursive;font-weight: 500;;">Features</h2>
+				<br>
+				<ul style="list-style-type: style;" >
+					<li style="text-align: left;">Get more discount & offers for each Course</li>
+					<br>
+					<li style="text-align: left;">Access to online Lab services for one month</li>
+					<br>
+					<li style="text-align: left;">Get all the gen3 AI benifits</li>
+					<br>
+					<li style="text-align: left;">You can cancel the plan anytime</li>
+					<br>
+					<li style="text-align: left;">Free Courses will be available anytime</li>
+				</ul>
+				<br>
+				<a href="#" style="font-size: 18px;color: #e9a424;">start 30 days free trail</a>
+				<h4><span style="color: #164782;" id="inr1">INR.</span><span id="inr2" style="color: black;">599 </span><span id="m" style="font-weight: 100;">/ Month</span></h4>
+				<button><a href="checkoutpage.html"> Subscribe</a></button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-left">
+					<h1>Try ViewSpex Monthly Plan</h1>
+					<p>Get Access to all the virtual labs on viewspex.</p>
+					<button id="signIn">GO TO</button>
+				</div>
+				<div class="overlay-right">
+					<h1>Try ViewSpex Yearly Plan</h1>
+					<p>Students get up to 50% discount on all courses.</p>
+					<button id="signUp"> GO TO</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const main = document.getElementById('main');
+
+		signUpButton.addEventListener('click', () => {
+			main.classList.add("right-panel-active");
+		});
+		signInButton.addEventListener('click', () => {
+			main.classList.remove("right-panel-active");
+		});
+	</script>
+	<div class="footer">
+		<h5 style="padding: 40px ;">www.viewspex.com</h5>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!-- Font Awesome Cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Fontawesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css file/interface.css">
+    <title >profile</title>
+    <style>
+      .b2{
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        margin: 0;
+        padding: 0;
+        font-family: 'Alkatra', cursive;
+        color:white;
+        padding-left: 100px;
+        
+      }
+      .btn11{
+        display: inline-block;
+        background-color: white;
+        color: #911ab9;
+        padding: 10px 20px;
+        border-radius: 15px;
+        text-decoration: none;
+        width: min-content;
+        transition: background-color 0.3s ease;
+      }
+      .had{
+      
+        background-color: #333;
+	    color: #fff;
+	    padding: 20px;
+      }
+      .crew-heading{
+        display: flex;
+        flex-direction: column;
+       color: #000;
+       text-align: center;
+        
+      }
+      
+      h1, h2 {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-top: 20px;
+      }
+      
+      p {
+        margin-top: 10px;
+      }
+
+      .challenge-div{
+        display:flex;
+        flex-direction: column;
+        
+        align-items: center;
+
+        
+      }
+      
+      .challenge {
+        margin-top: 50px;
+        padding: 20px;
+        width: 40vw;
+        background-color: #a304b28a;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 14px 28px rgb(0, 0, 0),
+  0 10px 10px rgba(0,0,0,0.14)
+      }
+
+      .challenge:first-child{
+        background-color: rgb(38,9,68);
+      }
+      .challenge:nth-child(2){
+        background-color: rgb(38,9,68)}
+      .challenge:nth-child(3){
+
+         background-color: rgb(38,9,68);         }
+      .challenge:nth-child(4){
+        background-color: rgb(38,9,68)}
+      .challenge:nth-child(5){
+        background-color: rgb(38,9,68);
+        }
+      .challenge:nth-child(6){
+        
+        background-color: rgb(38,9,68)}
+        .challenge:nth-child(7){
+        
+        background-color: rgb(38,9,68)}
+
+        .centered-right-div:first-child{
+        background-color: rgb(38,9,68);}
+        .challenge {
+        position: relative;
+        }
+
+        .top-right-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        }
+
+
+      .challange-btn{
+        outline: none;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 5px;
+      }
+      .challange-btn a{
+        text-decoration: none;
+      }
+      .challenge h2 {
+        margin-top: 0;
+      }
+      
+      .challenge p {
+        margin-bottom: 0px;
+      }
+      footer{
+        margin-top: 1%;
+        color: #000;
+      }
+
+
+      .centered-right-div {
+          position: absolute;
+          top: 105%;
+          right: 5%;
+          transform: translate(0, -50%);
+          background-color: #a304b28a;
+          padding: 20px;
+          width: 600px;
+          border-radius: 10px;
+          text-align: center;
+          box-shadow:10px 10px 10px 10px #911ab9;
+        }
+
+        .centered-right-div h2 {
+          margin-top: 0;
+        }
+
+        .centered-right-div ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        .centered-right-div li {
+          margin-bottom: 10px;
+        }
+        h3{
+            color: white;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+        }
+        h2{
+            color:violet;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+
+
+        .dropbtn1 {
+          padding: 16px;
+          font-size: 36px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        a{
+        text-decoration: none;
+        color: white;
+      }
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+            </style>
+        <script>
+         /*   function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }*/
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+        }
+        }
+            </script>
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+              <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+              <div class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="newsfeed.html">Newsfeed</a>
+              <a href="crew clash.html">Crew</a>
+              <a href="course.html">Courses</a>
+              <a href="upload project.html">Project</a>
+              <a href="creator.html">GEN3</a>
+              <a href="webinar.html">Webiner</a>
+              <a href="#home">Settings</a>
+              <a href="login and signup.html">Logout</a>
+  
+              </div>
+            </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="progress.html">Progress</a></li>
+                  <li><a href="crew clash.html">Crew Clash</a></li>
+          <li><a href="game.html">Learning Cities</a></li>
+          <li><a href="creator.html">Gen3</a></li>
+          <li><a href="insidecities.html">RedAi</a></li>
+          <li><div class="dropdown">
+            <a onclick="myFunction()" class="dropbtn">Settings</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Account Setting</a>
+              <a href="#about">Progress Tracking</a>
+              <a href="#contact">Feedback and Support</a>
+              <a href="#contact">Notification Preferences</a>
+              <a href="#contact">Upgrade to Hardship</a>
+  
+            </div>
+            </div></li>
+          <li><a href="newsfeed.html">Newsfeed</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+  <!--body-->
+  <div class="b2">
+    <div class="hed">
+      <h2 class="crew-heading">DashBoard</h2>
+    </div>
+    
+    <div class="challenge">
+        <h2><a>Courses</a></h2>
+        <a href="course.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+  
+      
+      <div class="challenge">
+        <h2><a>Battle</a></h2>
+        <a href="crew clash.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+      
+      <div class="challenge">
+        <h2><a>Project</a></h2>
+        <a href="upload project.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+      <div class="challenge">
+        <h2><a>Certificates</a></h2>
+        <a href="CERTIFICATE.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+      <div class="challenge">
+        <h2><a>Virtual Campus</a></h2>
+        <a href="virual campus.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+      <div class="challenge">
+        <h2><a>Payment</a></h2>
+        <a href="checkoutpage.html" class="btn11">Categories</a>
+        <img src="images/colorimage.png" width="200px" height="130px" class="top-right-image">
+      </div>
+
+  </div>
+
+
+
+  <div>
+      <div class="centered-right-div">
+        <h2>Our Features</h2>
+        <ul>
+          <li><h3>Gamified Learning</h3>
+            <p>Gamified learning is an approach to education that combines game mechanics with traditional educational materials to make the learning experience more engaging, interactive, and fun.</p></li>
+          <li><h3>Interactive Learning</h3>
+            <p>Interactive learning is a type of learning that involves active participation from the learner through various activities that engage them in the learning process.</p>
+        </li>
+          <li><h3>Crew Battle</h3>
+            <p>A crew battle in a learning app is a competitive learning experience where learners are divided into teams or crews and compete against each other to see who can learn and perform better.</p></li>
+          <li><h3>Attractive Rewards</h3>
+            <p>An attractive reward in a learning app refers to a form of positive reinforcement used to motivate and encourage users to continue using the app.</p>
+            </li>
+        </ul>
+      </div>
+  </div>
+  <br>
+  <br>
+  
+     <!-- Footer Start -->
+    <div>
+      <footer>
+        <div class="content11">
+        <div class="top">
+          <div class="logo-details">
+          
+          <span class="logo_name" style="color:black;">ViewSpex</span>
+          </div>
+          <div class="media-icons" >
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="home.html">About us</a></li>
+          <li><a href="login and signup.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Course Available</li>
+          <li><a href="course.html">Python</a></li>
+          <li><a href="course.html">Css</a></li>
+          <li><a href="course.html">Javascript</a></li>
+          <li><a href="course.html">HTML</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login and signup.html">My account</a></li>
+          <li><a href="progress.html">Preferences</a></li>
+          <li><a href="subscribe.html">Purchase</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Available On</li>
+          <li><a href="#">Play Store</a></li>
+          <li><a href="#">Apple Store</a></li>
+          </ul>
+          <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+        </div>
+        <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text" style="font-weight: bolder;">
+          Copyright &#169; 2023
+          <a href="#"style="font-weight: bolder;">ViewSpex</a>
+          Created By All Rights Reserved!
+          </span>
+          <span class="policy_terms" >
+          <a href="#" style="font-weight: bolder;">Privacy policy</a>
+          <a href="#" style="font-weight: bolder;">Terms & condition</a>
+          </span>
+        </div>
+        </div>
+      </footer>
+      </div>
+    
+    <!-- Footer End -->
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css file/interface.css">
+<!-- Font Awesome Cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Fontawesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+              function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    <title>Introduction to Python Video</title>
+    <style>
+        body{
+            background: linear-gradient( #e6cdfa,#debff5,#dbb6f8,#d09cf8 100%);
+            
+        }
+        .bbb {
+            font-family: Arial, sans-serif;
+            
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgb(0, 0, 0),
+				0 10px 10px rgb(0, 0, 0);
+            width: 100%;
+            max-width: 700px;
+            text-align: center;
+            font-weight: bolder;
+            color: black;
+        }
+.tittle{
+    font-size: 20px;
+}
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 360px;
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color:rgb(120, 166, 20);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type=file] {
+        background-color:#f0f2f2;
+        color:#141212;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      textarea[type=text] {
+        background-color:#f0f2f2;
+        color:#141212;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 80px;
+      }
+      a{
+        text-decoration: none;
+        color:rgb(245, 242, 242);
+      }
+      .cer{
+    font-size: large;
+        padding: 20px;
+        border-radius: 55px;
+        background: linear-gradient( #9f5ad8,#542577,#320b50,#0f011a 100%);
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.718),
+				0 10px 10px rgba(0,0,0,0.22);
+        color: white;
+        border: none;
+      }
+      .qwe{
+        padding-left: 680px;
+        justify-content: center;
+      }
+    </style>
+</head>
+
+<body>
+
+  <header>
+		<div class="dropdown">
+            <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+            <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="newsfeed.html">Newsfeed</a>
+            <a href="crew clash.html">Crew</a>
+            <a href="course.html">Courses</a>
+            <a href="upload project.html">Project</a>
+            <a href="creator.html">GEN3</a>
+            <a href="webinar.html">Webiner</a>
+            <a href="#home">Settings</a>
+            <a href="login and signup.html">Logout</a>
+
+            </div>
+          </div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="course.html">Courses</a></li>
+				<li><a href="progress.html">Progress</a></li>
+                <li><a href="crew clash.html">Crew Clash</a></li>
+				<li><a href="game.html">Learning Cities</a></li>
+				<li><a href="creator.html">Gen3</a></li>
+				<li><a href="insidecities.html">RedAi</a></li>
+				<li><div class="dropdown">
+					<a onclick="myFunction()" class="dropbtn">Settings</a>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#home">Account Setting</a>
+					  <a href="#about">Progress Tracking</a>
+					  <a href="#contact">Feedback and Support</a>
+					  <a href="#contact">Notification Preferences</a>
+					  <a href="#contact">Upgrade to Hardship</a>
+
+					</div>
+				  </div></li>
+				<li><a href="newsfeed.html">Newsfeed</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+      <br>
+      <br>
+    <!--contant-->
+    <div class="bbb">
+    <div class="container">
+        <h1>Give Vedio or Audio</h1><br>
+        <p>Give the video below to get started:</p>
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id_here" frameborder="0" allowfullscreen></iframe>
+        <a href="creator.html">Redaii-Video Translation Ai</a>
+        
+    
+    <h3 clas="tittle">Adaptive Learning</h3><br>
+    <input class="asd" type="file"></button><br><br>
+    <textarea row="100" type="text">Description</textarea>
+</div>
+</div>
+<br>
+<br>
+<div class="qwe">
+<button class="cer" type="submit"><a href="CERTIFICATE.html" >Ceritificates</a></button>
+</div>
+<br>
+<br><br>
+<!-- Footer Start -->
+<div>
+  <footer>
+    <div class="content11">
+    <div class="top">
+      <div class="logo-details">
+      
+      <span class="logo_name" style="color:black;">ViewSpex</span>
+      </div>
+      <div class="media-icons" >
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+      <li class="link_name">Company</li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="home.html">About us</a></li>
+      <li><a href="login and signup.html">Get started</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Course Available</li>
+      <li><a href="course.html">Python</a></li>
+      <li><a href="course.html">Css</a></li>
+      <li><a href="course.html">Javascript</a></li>
+      <li><a href="course.html">HTML</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Account</li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="login and signup.html">My account</a></li>
+      <li><a href="progress.html">Preferences</a></li>
+      <li><a href="subscribe.html">Purchase</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Available On</li>
+      <li><a href="#">Play Store</a></li>
+      <li><a href="#">Apple Store</a></li>
+      </ul>
+      <ul class="box input-box">
+      <li class="link_name">Subscribe</li>
+      <li><input type="text" placeholder="Enter your email"></li>
+      <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+    </div>
+    <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text" style="font-weight: bolder;">
+      Copyright &#169; 2023
+      <a href="#"style="font-weight: bolder;">ViewSpex</a>
+      Created By All Rights Reserved!
+      </span>
+      <span class="policy_terms" >
+      <a href="#" style="font-weight: bolder;">Privacy policy</a>
+      <a href="#" style="font-weight: bolder;">Terms & condition</a>
+      </span>
+    </div>
+    </div>
+  </footer>
+  </div>
+
+<!-- Footer End -->
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css file/interface.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Font Awesome Cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Fontawesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+              function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    <title >css course</title>
+    <style>
+      .b2{
+        font-size: 16px;
+      
+        margin: 0;
+        padding: 0;
+        font-family: 'Alkatra', cursive;
+     
+       
+      }
+      .had{
+      
+        
+	color: #fff;
+	padding: 20px;
+      }
+      .crew-heading{
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      h1, h2 {
+        font-weight: bold;
+        margin-top: 20px;
+        margin-top: 20px;
+      }
+      
+      p {
+        margin-top: 10px;
+      }
+
+      .challenge-div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+      }
+      
+      .challenge {
+        margin-top: 50px;
+        padding: 20px;
+        width: 50vw;
+        height: 15vw;
+        font-size: x-large;
+        color:rgb(233, 200, 231);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.886),
+				0 10px 10px rgba(0,0,0,0.22);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .challenge:first-child{
+        background:linear-gradient(rgb(46, 2, 46),rgb(79, 14, 79),rgb(133, 11, 133));}
+      .challenge:nth-child(2){
+        background:linear-gradient(rgb(46, 2, 46),rgb(79, 14, 79),rgb(133, 11, 133));}
+              .challenge:nth-child(3){
+
+                background:linear-gradient(rgb(46, 2, 46),rgb(79, 14, 79),rgb(133, 11, 133));}
+      .challenge:nth-child(4){
+        background:linear-gradient(rgb(46, 2, 46),rgb(79, 14, 79),rgb(133, 11, 133));}
+              .challenge:nth-child(5){
+                background:linear-gradient(rgb(46, 2, 46),rgb(79, 14, 79),rgb(133, 11, 133));}
+                            
+      .challange-btn{
+        outline: none;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 5px;
+      }
+      .challange-btn a{
+        text-decoration: none;
+      }
+      .challenge h2 {
+        margin-top: 0;
+      }
+      button{
+	color: #fff;
+	background: linear-gradient( #9f5ad8,#542577,#320b50,#0f011a 100%);
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 55px;
+	margin: 20px;
+	border-radius: 20px;
+	border:none;
+	outline: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+	cursor: pointer;
+}
+      .challenge p {
+        margin-bottom: 0px;
+      }
+      footer{
+        margin-top: 1%;
+        color: #000;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="dropdown">
+              <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+              <div class="dropdown-content">
+              <a href="home.html">Home</a>
+              <a href="newsfeed.html">Newsfeed</a>
+              <a href="crew clash.html">Crew</a>
+              <a href="course.html">Courses</a>
+              <a href="upload project.html">Project</a>
+              <a href="creator.html">GEN3</a>
+              <a href="webinar.html">Webiner</a>
+              <a href="insidecities.html">Settings</a>
+              <a href="login and signup.html">Logout</a>
+  
+              </div>
+            </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="progress.html">Progress</a></li>
+                  <li><a href="crew clash.html">Crew Clash</a></li>
+          <li><a href="game.html">Learning Cities</a></li>
+          <li><a href="creator.html">Gen3</a></li>
+          <li><a href="road.html">RedAi</a></li>
+          <li><div class="dropdown">
+            <a onclick="myFunction()" class="dropbtn">Settings</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Account Setting</a>
+              <a href="#about">Progress Tracking</a>
+              <a href="#contact">Feedback and Support</a>
+              <a href="#contact">Notification Preferences</a>
+              <a href="#contact">Upgrade to Hardship</a>
+  
+            </div>
+            </div></li>
+          <li><a href="newsfeed.html">Newsfeed</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+  <!--body-->
+  <div class="b2">
+    <div class="hed">
+      <h2 class="crew-heading">CSS FULL Course</h2>
+    </div>
+    
+    <div class="challenge-div">
+      <div class="challenge">
+        <h2>Beginner level</h2>
+        <h5>Learn basic of CSS</h5>
+        <a href="https://youtu.be/FQdaUv95mR8?feature=shared" style="text-decoration: none;"><img src="images/vid.png" alt="" style="align-items: center;"></a>
+        <h6>Time Duration: 45 mins</h6>
+      </div>
+  
+      
+      <div class="challenge">
+        <h2><a>Intermediate level 1</a></h2>
+        <h5><a>Learn the working of all styles</a></h5>
+        <a href="https://youtu.be/vfs1wBDoqBY?feature=shared" style="text-decoration: none;"><img src="images/vid.png" alt="" style="align-items: center;"></a>
+        <h6>Time Duration: 1hrs 36 mins</h6>
+      </div>
+      
+      <div class="challenge">
+        <h2><a>Intermediate level 2 </a></h2>
+        <h5><a>Get experiance by builting a webpage</a></h5>
+        <a href="https://youtu.be/kUMe1FH4CHE?feature=shared" style="text-decoration: none;"><img src="images/vid.png" alt="" style="align-items: center;"></a>
+        <h6>Time Duration: 4hrs</h6>
+      </div>
+      <div class="challenge">
+        <h2><a>Advance Level</a></h2>
+        <h5><a>Create your own project</a></h5>
+        <a href="https://youtu.be/G3e-cpL7ofc?feature=shared" style="text-decoration: none;"><img src="images/vid.png" alt="" style="align-items: center;"></a>
+        <h6>Time Duration: 7hrs</h6>
+      </div>
+      <div class="challenge">
+        <h2><a>Exam</a></h2>
+        <h5><a>Submit your Project and take test</a></h5>
+        <button class="upload-button" type="submit"><a href="upload project.html"> Project</a></button>
+        <h6><a href="CERTIFICATE.html">Pay to view Certificate</a></h6>
+      </div>
+  </div><br>
+     <!-- Footer Start -->
+    <div>
+      <footer>
+        <div class="content11">
+        <div class="top">
+          <div class="logo-details">
+          
+          <span class="logo_name" style="color:black;">ViewSpex</span>
+          </div>
+          <div class="media-icons" >
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="home.html">About us</a></li>
+          <li><a href="login and signup.html">Get started</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Course Available</li>
+          <li><a href="course.html">Python</a></li>
+          <li><a href="course.html">Css</a></li>
+          <li><a href="course.html">Javascript</a></li>
+          <li><a href="course.html">HTML</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="login and signup.html">My account</a></li>
+          <li><a href="progress.html">Preferences</a></li>
+          <li><a href="subscribe.html">Purchase</a></li>
+          </ul>
+          <ul class="box">
+          <li class="link_name">Available On</li>
+          <li><a href="#">Play Store</a></li>
+          <li><a href="#">Apple Store</a></li>
+          </ul>
+          <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+          </ul>
+        </div>
+        </div>
+        <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text" style="font-weight: bolder;">
+          Copyright &#169; 2023
+          <a href="#"style="font-weight: bolder;">ViewSpex</a>
+          Created By All Rights Reserved!
+          </span>
+          <span class="policy_terms" >
+          <a href="#" style="font-weight: bolder;">Privacy policy</a>
+          <a href="#" style="font-weight: bolder;">Terms & condition</a>
+          </span>
+        </div>
+        </div>
+      </footer>
+      </div>
+    
+    <!-- Footer End -->
+</body>
+</html>

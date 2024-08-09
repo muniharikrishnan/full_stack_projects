@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ViewSpex</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css file/interface.css">
+<!-- Font Awesome Cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Fontawesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+        function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+</head>
+<body>
+	<header>
+		<div class="dropdown">
+            <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+            <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="newsfeed.html">Newsfeed</a>
+            <a href="crew clash.html">Crew</a>
+            <a href="course.html">Courses</a>
+            <a href="upload project.html">Project</a>
+            <a href="creator.html">GEN3</a>
+            <a href="webinar.html">Webiner</a>
+            <a href="#home">Settings</a>
+            <a href="login and signup.html">Logout</a>
+
+            </div>
+          </div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="course.html">Courses</a></li>
+				<li><a href="progress.html">Progress</a></li>
+                <li><a href="crew clash.html">Crew Clash</a></li>
+				<li><a href="game.html">Learning Cities</a></li>
+				<li><a href="creator.html">Gen3</a></li>
+				<li><a href="insidecities.html">RedAi</a></li>
+				<li><div class="dropdown">
+					<a onclick="myFunction()" class="dropbtn">Settings</a>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#home">Account Setting</a>
+					  <a href="#about">Progress Tracking</a>
+					  <a href="#contact">Feedback and Support</a>
+					  <a href="#contact">Notification Preferences</a>
+					  <a href="#contact">Upgrade to Hardship</a>
+
+					</div>
+				  </div></li>
+				<li><a href="newsfeed.html">Newsfeed</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<main>
+		<section class="hero">
+			<h2 style="color: rgb(38, 9, 68);">Welcome to our Learning App</h2>
+			<p style="color: rgb(38, 9, 68);">Learn something new today with our engaging courses.</p>
+			<a href="login and signup.html" class="btn">Get Started</a>
+		</section>
+		
+		<section class="features">
+			<h2  style="color: rgb(38, 9, 68);">Features</h2>
+			<ul>
+				<li>
+					<img src="interface/2.png" alt="Feature Icon">
+					<h3>Gamified Learning</h3>
+					<p>Gamified learning is an approach to education that combines game mechanics with traditional educational materials to make the learning experience more engaging, interactive, and fun. This approach uses elements such as points, badges, leaderboards, and levels to encourage students to participate in learning activities, complete tasks, and achieve specific learning objectives.</p>
+				</li>
+                <li>
+					<img src="interface/iner.png" alt="Feature Icon">
+					<h3>Interactive Learning</h3>
+					<p>Interactive learning is a type of learning that involves active participation from the learner through various activities that engage them in the learning process. In the context of learning apps, interactive learning refers to the use of various features that encourage engagement and participation from the learner.Examples of interactive learning.It Quizzes and assessments,videoes,Simulations etc</p>
+				</li>
+				<li>
+					<img src="interface/3.png" alt="Feature Icon">
+					<h3>Crew Battle</h3>
+					<p>A crew battle in a learning app is a competitive learning experience where learners are divided into teams or crews and compete against each other to see who can learn and perform better. The goal of a crew battle is to create a fun and engaging learning experience that motivates learners to participate and learn.In a crew battle, learners may compete in various challenges, such as quizzes, assessments, or other learning activities. The team with the highest score at the end of the challenge wins the battle. </p>
+				</li>
+				<li>
+					<img src="interface/attra.png" alt="Feature Icon">
+					<h3>Attractive Rewards</h3>
+					<p>An attractive reward in a learning app refers to a form of positive reinforcement used to motivate and encourage users to continue using the app. This can be in the form of virtual rewards such as badges, points, or levels, or tangible rewards like discounts or prizes. The goal is to make the learning experience more engaging and enjoyable, leading to increased user retention and progress.</p>
+					
+				</li>
+			</ul>
+		</section>
+		
+		<section class="courses">
+			<h2  style="color: rgb(38, 9, 68);">Courses</h2>
+			<ul>
+				<li>
+					<img src="interface/html-removebg-preview.png" alt="Course Image">
+					<h3>HTML</h3>
+					<p>HTML stands for Hyper Text Markup Language.HTML is the standard markup language for creating Web pages.HTML describes the structure of a Web page.HTML consists of a series of elements.HTML elements tell the browser how to display the content.             </p><br>
+					<a href="course.html" class="btn" >Enroll Now</a>
+				</li>
+                <li>
+					<img src="interface/cssssssssssssssssss-removebg-preview.png" alt="Course Image">
+					<h3>CSS</h3>
+					<p>CSS stands for Cascading Style Sheets.CSS describes how HTML elements are to be displayed on screen, paper, or in other media.CSS saves a lot of work. It can control the layout of multiple web pages all at once and external pages also.</p><br>
+					<a href="course.html" class="btn" >Enroll Now</a>
+				</li>
+                <li>
+					<img src="interface/js-removebg-preview.png" alt="Course Image">
+					<h3>JavaScript</h3>
+					<p>JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is  known as scripting language. It is well-known for the development of web pages, many non-browser environments also use it.          </p><br>
+					<a href="course.html" class="btn" >Enroll Now</a>
+				</li>
+                <li>
+					<img src="interface/pyt-removebg-preview.png" alt="Course Image">
+					<h3>Python </h3>
+					<p>Python is a high-level programming language and is widely being used among the developers community.It is used in serverside in webpages. Python is a programming language that lets you work quickly and more effective one.</p><br>
+					<a href="course.html" class="btn" >Enroll Now</a>
+				</li>
+                <li>
+					<img src="interface/java-removebg-preview.png" alt="Course Image">
+					<h3>Java</h3>
+					<p>Java is class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.Java is used to develop mobile apps, web apps, desktop apps, games and much more  and merging language in morden days. </p><br>
+					<a href="course.html" class="btn">Enroll Now</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<!-- Footer Start -->
+    <div>
+		<footer>
+		  <div class="content11">
+			<div class="top">
+			  <div class="logo-details">
+				
+				<span class="logo_name" style="color:black;">ViewSpex</span>
+			  </div>
+			  <div class="media-icons" >
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			  </div>
+			</div>
+			<div class="link-boxes">
+			  <ul class="box">
+				<li class="link_name">Company</li>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="home.html">About us</a></li>
+				<li><a href="login and signup.html">Get started</a></li>
+			  </ul>
+			  <ul class="box">
+				<li class="link_name">Course Available</li>
+				<li><a href="course.html">Python</a></li>
+				<li><a href="course.html">Css</a></li>
+				<li><a href="course.html">Javascript</a></li>
+				<li><a href="course.html">HTML</a></li>
+			  </ul>
+			  <ul class="box">
+				<li class="link_name">Account</li>
+				<li><a href="profile.html">Profile</a></li>
+				<li><a href="login and signup.html">My account</a></li>
+				<li><a href="progress.html">Preferences</a></li>
+				<li><a href="subscribe.html">Purchase</a></li>
+			  </ul>
+			  <ul class="box">
+				<li class="link_name">Available On</li>
+				<li><a href="#">Play Store</a></li>
+				<li><a href="#">Apple Store</a></li>
+			  </ul>
+			  <ul class="box input-box">
+				<li class="link_name">Subscribe</li>
+				<li><input type="text" placeholder="Enter your email"></li>
+				<li><input type="button" value="Subscribe"></li>
+			  </ul>
+			</div>
+		  </div>
+		  <div class="bottom-details">
+			<div class="bottom_text">
+			  <span class="copyright_text" style="font-weight: bolder;">
+				Copyright &#169; 2023
+				<a href="#"style="font-weight: bolder;">ViewSpex</a>
+				Created By All Rights Reserved!
+			  </span>
+			  <span class="policy_terms" >
+				<a href="#" style="font-weight: bolder;">Privacy policy</a>
+				<a href="#" style="font-weight: bolder;">Terms & condition</a>
+			  </span>
+			</div>
+		  </div>
+		</footer>
+	  </div>
+  
+	<!-- Footer End -->
+</body>
+</html>
+	

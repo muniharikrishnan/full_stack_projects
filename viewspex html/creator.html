@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css file/interface.css">
+    <title>Creator Video Upload</title>
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script>
+                  function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+        </script>
+    <style>
+      body{
+        background: linear-gradient( #e6cdfa,#debff5,#dbb6f8,#d09cf8 100%);
+      }
+        .body12 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 1500px;
+            color: rgb(64, 4, 77);
+        }
+
+        .upload-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow:0px 5px 10px 5px #911ab9;
+           border: none;
+        }
+       .n11{
+           text-align: justify;
+           font-weight: bold;
+       }
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .upload-header {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        input[type=text] {
+        background-color:#f0f2f2;
+        color:#141212;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      textarea[type=text] {
+        background-color:#f0f2f2;
+        color:#141212;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type=file] {
+        background-color:#f0f2f2;
+        color:#141212;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+        .input-field {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            width: 1000px;
+            color:#4b4a4a;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            
+        }
+
+        .upload-button {
+            background-color: violet;
+            color:black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .upload-button:hover {
+            background-color: violet;
+            border-radius: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+  <header>
+		<div class="dropdown">
+            <a class="dropbtn1" style="font-size: large;">ViewSpex</a>
+            <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <a href="newsfeed.html">Newsfeed</a>
+            <a href="crew clash.html">Crew</a>
+            <a href="course.html">Courses</a>
+            <a href="upload project.html">Project</a>
+            <a href="creator.html">GEN3</a>
+            <a href="webinar.html">Webiner</a>
+            <a href="#home">Settings</a>
+            <a href="login and signup.html">Logout</a>
+
+            </div>
+          </div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="course.html">Courses</a></li>
+				<li><a href="progress.html">Progress</a></li>
+                <li><a href="crew clash.html">Crew Clash</a></li>
+				<li><a href="game.html">Learning Cities</a></li>
+				<li><a href="creator.html">Gen3</a></li>
+				<li><a href="insidecities.html">RedAi</a></li>
+				<li><div class="dropdown">
+					<a onclick="myFunction()" class="dropbtn">Settings</a>
+					<div id="myDropdown" class="dropdown-content">
+					  <a href="#home">Account Setting</a>
+					  <a href="#about">Progress Tracking</a>
+					  <a href="#contact">Feedback and Support</a>
+					  <a href="#contact">Notification Preferences</a>
+					  <a href="#contact">Upgrade to Hardship</a>
+
+					</div>
+				  </div></li>
+				<li><a href="newsfeed.html">Newsfeed</a></li>
+				
+			</ul>
+		</nav>
+	</header>
+    <!--video-->
+<div class="body12">
+    <div class="upload-container">
+        <div class="upload-form">
+            <h2 class="upload-header">Upload Your Video</h2><br>
+            <form action="upload_video.php" method="post" enctype="multipart/form-data">
+                <lable class="n11">Video Path:</lable><br>
+                <input class="input-field" type="file" name="videoFile" accept="video/*" required><br>
+                <lable class="n11">Video Title:</lable><br>
+                <input class="input-field" type="text" name="videoTitle" placeholder="Video Title" required><br>
+                <lable class="n11">Video Description:</lable><br>
+                <textarea type="text" class="input-field" name="videoDescription" placeholder="Video Description" rows="4" required></textarea><br>
+                <button class="upload-button" type="submit">Upload</button><br><br>
+                <lable class="n11">Original Language:</lable><br>
+                <input class="input-field" type="text" name="videoTitle" placeholder="Video Title" required><br>
+                <lable class="n11">Translate Language:</lable><br>
+                <input class="input-field" type="text" name="videoTitle" placeholder="Video Title" required><br>
+                <button class="upload-button" type="submit">Start Translate</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Start -->
+<div>
+  <footer>
+    <div class="content11">
+    <div class="top">
+      <div class="logo-details">
+      
+      <span class="logo_name" style="color:black;">ViewSpex</span>
+      </div>
+      <div class="media-icons" >
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+      <li class="link_name">Company</li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="home.html">About us</a></li>
+      <li><a href="login and signup.html">Get started</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Course Available</li>
+      <li><a href="course.html">Python</a></li>
+      <li><a href="course.html">Css</a></li>
+      <li><a href="course.html">Javascript</a></li>
+      <li><a href="course.html">HTML</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Account</li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="login and signup.html">My account</a></li>
+      <li><a href="progress.html">Preferences</a></li>
+      <li><a href="subscribe.html">Purchase</a></li>
+      </ul>
+      <ul class="box">
+      <li class="link_name">Available On</li>
+      <li><a href="#">Play Store</a></li>
+      <li><a href="#">Apple Store</a></li>
+      </ul>
+      <ul class="box input-box">
+      <li class="link_name">Subscribe</li>
+      <li><input type="text" placeholder="Enter your email"></li>
+      <li><input type="button" value="Subscribe"></li>
+      </ul>
+    </div>
+    </div>
+    <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text" style="font-weight: bolder;">
+      Copyright &#169; 2023
+      <a href="#"style="font-weight: bolder;">ViewSpex</a>
+      Created By All Rights Reserved!
+      </span>
+      <span class="policy_terms" >
+      <a href="#" style="font-weight: bolder;">Privacy policy</a>
+      <a href="#" style="font-weight: bolder;">Terms & condition</a>
+      </span>
+    </div>
+    </div>
+  </footer>
+  </div>
+
+<!-- Footer End -->
+</body>
+</html>

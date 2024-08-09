@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="css file/checkstyle.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+<style>
+  #topfo{
+    background: linear-gradient( #ca96f1,#b367ec,#9727ec,#8F00FF 100%);
+  }
+  #footer{
+    background: linear-gradient( #ca96f1,#b367ec,#9727ec,#8F00FF 100%);
+  }
+  body{
+    background: linear-gradient( #e6cdfa,#debff5,#dbb6f8,#d09cf8 100%);
+  }
+
+.pay{ 
+	display: flex;
+	flex-direction: column;
+	background: #f6f5f7;
+	font-family: 'monserrat', sans-serif;
+	min-height: 100%;
+	margin: 5%;
+	position: relative;
+	width: px;
+	max-width: 100%;
+	min-height: 480px;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+				0 10px 10px rgba(0,0,0,0.22)
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}      
+input[type=text] {
+  background-color:#f0f2f2;
+  color:#4b4a4a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#navbar{
+  background: linear-gradient( #ca96f1,#b367ec,#9727ec,#8F00FF 100%);
+}
+.copyright{
+  color: white;
+}
+</style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <h3 style="font-family: cursive;color: white;margin-left: 50px;">ViewSpex</h3>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <h2 style="text-align: center; color: white;">Checkout</h2>
+                    
+                  </li>
+            </ul>
+          </div>
+          <img src="images/sec.png" style="margin-right: 120px;" width="26px">
+        </div>
+      </nav>
+    <!-- navbar -->
+   <div class="pay">
+     <form name="paymentform">
+      <br>
+      <br>
+      <label style="font-size:large;font-weight:700;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-left: 25px;color: rgb(60, 1, 83);">1 &nbsp;&nbsp;&nbsp;User Details</label>
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;">First Name</label>
+      <input type="text" placeholder="    Enter your first name" style="margin-left: 5px;">
+      
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 60px;">Last Name</label>
+      <input type="text" placeholder="    Enter your last name" style="margin-left: 5px;">
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;">Address</label>
+      <input type="text" placeholder="    Room.no-street-locality" style="margin-left: 22px;">
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 60px;">City</label>
+      <input type="text" placeholder="    Enter your city" style="margin-left: 53px;">
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 60px;">State</label>
+      <input type="text" placeholder="    Enter your state" style="margin-left: 13px;">
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;">PIN Code</label>
+      <input type="text" placeholder="    Enter your PINCODE" style="margin-left: 13px;">
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 60px;">Contact.No</label>
+      <input type="text" placeholder="    Enter your phonenumber" style="margin-left: 4px;"><br>
+      <br>
+      <br>
+      <button style="margin-left: 520px;color:rgba(0, 0, 0, 0.795);
+      background: linear-gradient( #9f5ad8,#542577,#320b50,#0f011a 100%);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 25px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      outline: none;
+      letter-spacing: 1px;
+      transition: transform 80ms ease-in;
+      cursor: pointer;">Save All</button>
+      <a href="checkoutpage.html" style="text-decoration: none;">Edit address</a>
+      <br>
+      <label style="font-size:large;font-weight:700;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-left: 25px;color: rgb(60, 1, 83);">2 &nbsp;&nbsp;&nbsp;Payment method</label>
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;font-weight: bold;">Net banking</label>
+      <select name="cars" id="cars" style="margin-left: 90px;border: none;border-radius: 4px;background-color:#f0f2f2;">
+          <option value="#">Airtel Payments Bank</option>
+          <option value="#">Axis Bank</option>
+          <option value="#">Bank of India</option>
+          <option value="#">Canara Bank</option>
+          <option value="#">City Union Bank</option>
+          <option value="#">Cosmos Bank</option>
+          <option value="#">Federal Bank</option>
+          <option value="#">HDFC Bank</option>
+          <option value="#">Indian Overseas Bank</option>
+          <option value="#">ICICI Bank</option>
+          <option value="#">Laxmi-vilas Bank</option>
+          <option value="#">State Bank of India</option>
+          <option value="#">South Indian Bank</option>
+          <option value="#">Tamilnadu Merchentile Bank Ltd</option>
+          <option value="#">Union Bank of India</option>
+          <option value="#">Yes Bank Ltd</option>   
+      </select>
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;font-weight: bold;">Credit or Debit card</label>
+      <img src="icons/card.jpeg">
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 150px;">Card Holder Name</label>
+      <input type="text" placeholder="    Enter name on card" style="margin-left: 20px;">
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;">Credit card Number</label>
+      <input type="text" placeholder="    6666-2422-3933-4352" style="margin-left: 14px;">
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 150px;">Expiry Date</label>
+      <input type="date" placeholder="    " style="margin-left: 67px;  padding: 12px 20px;border: none;border-radius: 4px;background-color:#f0f2f2;">
+      
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 180px;">CVV Number</label>
+      <input type="text" placeholder="    000" style="margin-left: 56px;">
+      <br>
+      <br>
+      <br>
+      <label style="font-size:15px;font-family:Arial, Helvetica, sans-serif;margin-left: 120px;font-weight: bold;">UPI apps <span id="ex" style="font-weight: 200;">(support all)</span></label>
+      <input type="text" placeholder="    Enter UPI id here" style="margin-left: 26px;">
+      <br>
+      <br>
+      <button style="margin-left: 524px;color:rgba(0, 0, 0, 0.795);
+      background: linear-gradient( #9f5ad8,#542577,#320b50,#0f011a 100%);
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px 25px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      outline: none;
+      letter-spacing: 1px;
+      transition: transform 80ms ease-in;
+      cursor: pointer;">Procced</button>
+      <a href="checkoutpage.html" style="text-decoration: none;">Clear All</a>
+      <br>
+      <br>
+      <br>
+    </form>
+   </div>
+   
+    <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top" id="topfo">
+        <div class="container">
+          <div class="row">
+            <p style="color: white;">Need help? Check our help pages or contact us<br><br>
+When your order is placed, we'll send you an e-mail message acknowledging receipt of your order.<br><br>
+See ViewSpex.in's Return Policy.<br><br>
+
+Need to add more Courses to your order? Continue shopping on the ViewSpex.in homepage.</p>
+      <hr>
+      <div class="container py-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>ViewSpex</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+</body>
+</html>
