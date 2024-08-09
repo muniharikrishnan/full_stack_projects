@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color:#ecf0f3;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            outline: none;
+
+        }
+        .container{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator{
+            background-color: #ecf0f3;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: inset 5px 5px 12px #ffffff,
+                              5px 5px 12px rgba(0,0,0,0.16);
+            display: grid;
+            grid-template-columns: repeat(4,68px);
+        }
+        input{
+            grid-column: span 4;
+            height: 60px;
+            width: 260px;
+            background-color: #ecf0f3;
+            box-shadow: inset -5px -5px 12px #ffffff,
+                            inset 5px 12px rgba(0,0,0,0.16);        
+            
+            border: none;
+           border-radius: 30px;
+           color: rgba(70, 70, 70, 70);
+           font-size: 50px;
+           text-align: end;
+           margin: auto;
+           margin-top: 40px;
+           margin-bottom: 20px;
+           padding-right:  20px;
+}   
+button{
+    width: 48px;
+    height: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px#ffffff,
+                 5px 5px 12px rgba(0,0,0,0.16);
+    border: none;
+    border-radius: 50px;
+    margin: 8px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.equal{
+    width: 112px;
+    height: 50px;
+    background-color: #ecf0f3;
+    box-shadow: -5px -5px 12px#ffffff,
+    5px 5px 12px rgba(0,0,0,0.16);
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" placeholder="0" id="'main">
+            <button type="submit" class="del" onclick="del()">DEL</button>
+            <button type="submit" class="clear" onclick="toclear()">CLR</button>
+            <button type="submit" class="add" onclick="diplay('+')">+</button>
+            <button type="submit" class="sub" onclick="diplay('-')">-</button>
+            <button type="submit" class="mul" onclick="diplay('*')">x</button>
+            <button type="submit" class="div" onclick="diplay('/')">/</button>
+            <button type="submit" class="per" onclick="diplay('%')">%</button>
+            <button type="submit" class="zero" onclick="diplay('0')">0</button>
+            <button type="submit" class="one" onclick="diplay('1')">1</button>
+            <button type="submit" class="two" onclick="diplay('2')">2</button>
+            <button type="submit" class="three" onclick="diplay('3')">3</button>
+            <button type="submit" class="four" onclick="diplay('4')">4</button>
+            <button type="submit" class="five" onclick="diplay('5')">5</button>
+            <button type="submit" class="six" onclick="diplay('6')">6</button>
+            <button type="submit" class="seven" onclick="diplay('7')">7</button>
+            <button type="submit" class="eight" onclick="diplay('8')">8</button>
+            <button type="submit" class="nine" onclick="diplay('9')">9</button>
+            <button type="submit" class="dot" onclick="diplay('.')">.</button>
+            <button type="submit" class="equal"onclick="calculate()">=</button>
+        
+            
+        </div>
+        <script src="calci.js"></script>
+    </div>
+</body>
+</html>
