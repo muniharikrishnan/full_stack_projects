@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Code Editor</title>
+    <link rel="stylesheet" href="text-editor.css">
+</head>
+<body>
+    <div id="editor-container">
+        <div id="sidebar">
+            <div id="file-explorer">
+                <h2>File Explorer</h2>
+                <ul>
+                    <li>index.html</li>
+                    <li>text-editor.css</li>
+                    <li>text-editor.js</li>
+                </ul>
+            </div>
+            <div id="console">
+                <h2>Console</h2>
+                <div id="console-output"></div>
+            </div>
+        </div>
+        <div id="editor">
+            <textarea id="code-editor" placeholder="Start coding..."></textarea>
+        </div>
+    </div>
+    <script src="text-editor.js"></script>
+</body>
+</html>
